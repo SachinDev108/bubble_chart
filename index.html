@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bubble Chart</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bubble_chart.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="headerTitle">
+          <h1>Bacteria Count Spread:</h1>
+          <div id="toolbar">
+            <a href="#" id="all" class="button active">All Species</a>
+            <a href="#" id="species" class="button">Species</a>
+          </div>
+        </div>
+        <div id="colorPickerContainer" class="colorPickerContainer">
+          <h3>Count:</h3>
+          <div class="colorPicker">
+            <h4 class="label">1-500:</h4>
+            <input type="color" name="favcolor" id="low" class="inputColor">
+          </div>
+          <div class="colorPicker">
+            <h4 class="label">500-10000:</h4>
+            <input type="color" name="favcolor" id="medium" class="inputColor">
+          </div>
+          <div class="colorPicker">
+            <h4 class="label">>10000:</h4>
+            <input type="color" name="favcolor" id="high" class="inputColor">
+          </div>
+        </div>
+      </div>
+      <div id="vis"></div>
+    </div>
+    <script src="lib/d3.js"></script>
+    <script src="src/tooltip.js"></script>
+    <script src="src/toggle_button.js"></script>
+    <script src="src/color_input.js"></script>
+    <script src="src/utils.js"></script>
+    <script src="src/bubble_chart.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
